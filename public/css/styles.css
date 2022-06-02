@@ -1,0 +1,379 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    background-color: #ebebebaa;
+}
+
+/*header del home.html*/
+.main-header {
+    background-color: #fbe04a;
+    padding: 15px;
+}
+
+.burger-menu {
+    display: block;
+    text-align: center;
+    color: #0756c6;
+}
+
+.main-header-top-bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 50%;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    background-color: #fff;
+    border: solid white;
+    border-radius: 5px;
+}
+
+.search-box input {
+    display: inline-block;
+    max-width: 90%;
+    min-width: 90%;
+    background: transparent;
+    font-size: 12px;
+    padding: 8px;
+    border: 1px solid transparent;
+}
+
+.search-box button {
+    display: inline-block;
+    background-color: transparent;
+    margin-left: -40px;
+    padding: 5px;
+    border: #666;
+}
+
+.copy-header {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+/*Barra de navegación header*/
+.main-navbar {
+    display: none;
+}
+
+.main-navbar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: block;
+}
+
+.main-navbar a {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #222;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+/*MAIN BANNER*/
+section.banner img{
+    width: 100%;
+    display: block;
+}
+
+/*Main*/
+main {
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
+}
+
+/*Productos y caracteristicas*/
+.titulo-seccion-main {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.productos {
+    margin-bottom: 25px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.productos img {
+    width: 100%;
+    padding: 10px;
+}
+
+.descripcionProducto {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    line-height: 12px;
+    position: relative;
+}
+
+main section .productos i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px
+}
+
+.precio {
+    font-size: 18px;
+    line-height: 20px;
+    flex-grow: 0.30;
+}
+
+.descuento {
+    font-size: 16px;
+    line-height: 20px;
+    color: #39b54a;
+    flex-grow: 0.70;
+}
+
+.descripcion {
+    font-size: 16px;
+    padding: 15px;
+    color: #666;
+    display: none;
+}
+
+/*.copy-bienvenida {
+    display: none;
+}*/
+
+/**************** Footer *****************/ 
+footer {
+    padding: 30px;
+    margin-top: 60px;
+    background-color: #fff;
+    color: #666;
+    text-align: center;
+}
+
+footer i {
+    color: #0756c6;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+footer h4 {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer p {
+    margin-top: 0px;
+}
+
+/*********************** FORMUALRIOS ***********************/
+.login input, 
+.registro input {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.login input[type='submit'],
+.registro input[type='submit']{
+    color: rgb(0, 0, 0);
+    background-color: #719acf;  
+    border-radius: 5px;
+}
+
+.login input[type='submit']:hover,
+.register input[type='submit']:hover{
+    background-color: #719acf;
+}
+
+.register input[type='reset']{
+    color: rgb(0, 0, 0);
+    background-color: #721cb986;
+}
+
+.register input[type='reset']:hover{
+    background-color: #841adb86;
+}
+
+select.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+select.perfil input,
+select.perfil label{
+    width: auto;
+    width: auto;
+}
+
+div.categorias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.categorias div{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+div.categorias div label,
+div.categorias div input {
+    width: auto;
+}
+
+div.categorias div input{
+    margin: 20px;
+}
+
+/************************ MEDIA QUERIE ************************
+Podemos tener hasta cuatro media queries
+    576
+    768
+    992
+    1200
+*/
+
+@media (min-width: 480px) {
+    /*display: none;*/
+}
+
+/*  TABLETS (ancho mínimo 361 px) Desde 481 a 768
+                    Dos artículos */
+@media (min-width: 768px) {
+
+    .logo {
+        max-width: 25%;
+        padding: 5px;
+    }
+
+    .search-box {
+        width: 40%;
+    }
+
+    .copy-header {
+        max-width: 31%;
+        text-align: right;
+        flex-shrink: 1;
+    }
+
+    .main-navbar {
+        /*border: dotted 2px red;*/
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    .main-navbar ul {
+        display: flex;
+    }
+    .main-navbar li {
+        margin: 0 5px;
+    }
+
+    .productos {
+        box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.5);
+        width: 45%;
+    }
+    .descripcion {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .registro, .login {
+        max-width: 700px;
+        padding: 32px 64px;
+        margin-top: 40px;
+    }
+    .login {
+        padding: 32px 64px;
+        margin-top: 40px;
+    }
+}
+
+/*      DESKTOP 
+    cuatro artículos */
+@media (min-width: 1200px) {
+
+    .main-header-top-bar,
+    .main-navbar {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .search-box input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .search-box button {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .main-navbar li {
+        margin: 0 10px;
+    }
+    .main-navbar {
+        margin-top: 20px;
+    }
+    .main-navbar a {
+        line-height: 18px;
+        font-weight: 300;
+    }
+
+    .productos {
+        width: 22%;
+    }
+
+    .registro {
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+}
+
