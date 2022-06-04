@@ -139,6 +139,10 @@ main {
     position: relative;
 }
 
+main section article:hover .descripcion{
+    display: block;
+}
+
 main section .productos i {
     display: block;
     font-size: 16px;
@@ -172,11 +176,17 @@ main section .productos i {
     padding: 15px;
     color: #666;
     display: none;
+    font-weight: normal;
 }
 
-/*.copy-bienvenida {
-    display: none;
-}*/
+main section div.descripcionProducto article i{
+    transition: transform 5s;
+}
+
+main section div.descripcionProducto article:hover i {
+    transform: rotate(-90deg);
+}
+
 
 /**************** Footer *****************/ 
 footer {
@@ -204,6 +214,12 @@ footer p {
     margin-top: 0px;
 }
 
+footer .bloque {
+    margin: 5px;
+    padding: 20px;
+    text-align: center;    
+}
+
 /*********************** FORMUALRIOS ***********************/
 .login input, 
 .registro input {
@@ -223,7 +239,7 @@ footer p {
 
 .login input[type='submit']:hover,
 .register input[type='submit']:hover{
-    background-color: #719acf;
+    background-color: #0022AA;
 }
 
 .register input[type='reset']{
@@ -267,6 +283,7 @@ div.categorias div input {
 div.categorias div input{
     margin: 20px;
 }
+
 
 /************************ MEDIA QUERIE ************************
 Podemos tener hasta cuatro media queries
@@ -317,7 +334,14 @@ Podemos tener hasta cuatro media queries
         width: 45%;
     }
     .descripcion {
-        display: flex;
+        margin-top: 20px;
+        display: none;
+        /*display: flex;*/
+    }
+
+    h3,
+    .description{
+        color: #666;
     }
 
     .burger-menu {
@@ -373,6 +397,15 @@ Podemos tener hasta cuatro media queries
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    footer div.footer-pie {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer div.bloque:hover i {
+        background-color: #af0dd8;
     }
 
 }
